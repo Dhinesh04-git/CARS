@@ -1,17 +1,17 @@
-//NAV BACKGROUND
-
-const images = ["img/car1.jpg","img/car3.jpg", "img/RR.jpg", "img/RR1.jpg"];
-
+const images = ["img/car1.jpg", "img/car3.jpg", "img/RR.jpg", "img/RR1.jpg"];
 let index = 0;
 const hero = document.getElementById("hero");
+images.forEach((src) => {
+  const img = new Image();
+  img.src = src;
+});
 
 function changeBackground() {
-  hero.style.backgroundImage = `url(${images[index]})`;
+  hero.style.backgroundImage = `url('${images[index]}')`;
   index = (index + 1) % images.length;
 }
-
 changeBackground();
-setInterval(changeBackground, 3000);
+setInterval(changeBackground, 4000);
 
 //SLIDER
 
@@ -61,4 +61,3 @@ setInterval(nextSlide, 6000);
 
 // Initial Active Dot
 updateCarousel();
-
