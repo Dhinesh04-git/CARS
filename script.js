@@ -61,3 +61,43 @@ setInterval(nextSlide, 6000);
 
 // Initial Active Dot
 updateCarousel();
+
+const backToTopBtn = document.getElementById("backToTop");
+
+window.onscroll = function () {
+  // Show button after scrolling down 400px
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
+    backToTopBtn.classList.remove(
+      "opacity-0",
+      "translate-y-10",
+      "pointer-events-none",
+    );
+    backToTopBtn.classList.add(
+      "opacity-100",
+      "translate-y-0",
+      "pointer-events-auto",
+    );
+  } else {
+    backToTopBtn.classList.add(
+      "opacity-0",
+      "translate-y-10",
+      "pointer-events-none",
+    );
+    backToTopBtn.classList.remove(
+      "opacity-100",
+      "translate-y-0",
+      "pointer-events-auto",
+    );
+  }
+};
+
+// Scroll to top logic
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
