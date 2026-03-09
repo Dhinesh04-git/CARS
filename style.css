@@ -10,4 +10,25 @@ body {
   overflow-x: hidden;
 }
 
+#slider-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
 
+/* Chrome, Safari, Edge Thumb */
+#slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 60px;
+  height: 500px; /* Ensures grabbing works top to bottom */
+  cursor: col-resize;
+}
+
+/* Firefox Thumb */
+#slider-input::-moz-range-thumb {
+  width: 60px;
+  height: 500px;
+  cursor: col-resize;
+  background: transparent;
+  border: none;
+}

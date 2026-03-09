@@ -102,3 +102,16 @@ backToTopBtn.addEventListener("click", () => {
   });
 });
 
+const sliderInput = document.getElementById("slider-input");
+const afterImg = document.getElementById("after-img");
+const sliderHandle = document.getElementById("slider-handle");
+
+sliderInput.addEventListener("input", (e) => {
+  const position = e.target.value;
+
+  // Moves the white line and circle handle
+  sliderHandle.style.left = `${position}%`;
+
+  // Adjusts the visible area of the "Clean" image
+  afterImg.style.clipPath = `inset(0 ${100 - position}% 0 0)`;
+});
