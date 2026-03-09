@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUXURY GARAGE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./IMG/2.webp" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <!---------------DISCOUNT BAR------------------------------->
+<body class="font-[Chokokutai]">
+
+
+    <!-- DISCOUNT BAR -->
+    <div class="flex flex-col md:flex-row items-center justify-between p-4 text-[13px] md:text-[15px] bg-gray-50 gap-4 md:gap-0">
+      
+      <!-- Left Section: Discount -->
+      <div class="flex items-center">
+        <img src="IMG/bell1.jpg" alt="icon" class="w-5 h-5 mr-2" />
+        <p class="text-center md:text-left">Get 50% Discount for luxury garage New Member</p>
+      </div>
+
+      <!-- Right Section: Contact Info -->
+      <div class="flex flex-col sm:flex-row items-center gap-4 md:gap-6">
+        <!-- Call -->
+        <div class="flex items-center">
+          <img src="./IMG/call.png" alt="call" class="w-4 h-4 mr-2" />
+          <p>Call us: +91 8754877993</p>
+        </div>
+        <!-- Message -->
+        <div class="flex items-center">
+          <img src="./IMG/msg.png" alt="msg" class="w-5 h-5 mr-2" />
+          <p>support@luxurycars.com</p>
+        </div>
+      </div>
+
+    </div>
+
+
+      <!-----------------------nav bar----------------------------------->
+     <nav id="hero" class="bg-center bg-cover min-h-[600px] md:h-[800px] transition-all duration-1000 relative flex flex-col">
+  
+  <!-- Navbar Container -->
+  <div class="flex justify-between items-center px-4 md:px-10 py-4 text-white navbar w-full z-20">
+
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="./img/logo-white.webp" alt="logo" class="w-40 ml-9 sm:w-32 md:w-50">
+    </div>
+
+    <!-- Desktop Menu (Hidden on Mobile/Tablet) -->
+    <div class="hidden lg:flex">
+      <ul class="flex gap-4 xl:gap-6 text-sm xl:text-lg menu">
+        <!-- HOME -->
+        <li class="relative group cursor-pointer hover:text-red-500 py-2">HOME
+          <div class="absolute hidden group-hover:block bg-black text-white w-48 shadow-lg top-full">
+            <a href="#" class="block px-4 py-2 hover:bg-red-600">Homepage 1</a>
+            <a href="#" class="block px-4 py-2 hover:bg-red-600">Homepage 2</a>
+          </div>
+        </li>
+        <li class="relative group cursor-pointer hover:text-red-500 py-2">SERVICES</li>
+        <li class="relative group cursor-pointer hover:text-red-500 py-2">PAGES</li>
+        <li class="relative group cursor-pointer hover:text-red-500 py-2">SHOP</li>
+        <li class="relative group cursor-pointer hover:text-red-500 py-2">GALLERY</li>
+        <li class="relative group cursor-pointer hover:text-red-500 py-2">BLOG</li>
+        <li class="relative group cursor-pointer hover:text-red-500 py-2">WORKSHOP</li>
+      </ul>
+    </div>
+
+    <!-- Right Side: Button + Hamburger (Both visible on mobile) -->
+    <div class="flex items-center gap-3 md:gap-6">
+      <button class="relative overflow-hidden px-3 py-1.5 sm:px-6 sm:py-2 rounded-lg text-white border border-red-500 group">
+        <span class="absolute inset-0 bg-red-500 -translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+        <span class="relative z-10 text-[10px] sm:text-sm md:text-base font-bold whitespace-nowrap">
+          MAKE APPOINTMENT
+        </span>
+      </button>
+
+      <!-- Hamburger Icon (Visible only on Mobile/Tablet) -->
+      <h1 class="text-2xl sm:text-3xl cursor-pointer lg:hidden hover:text-red-500">☰</h1>
+    </div>
+  </div>
+
+  <!-- HEADING BAR (Hero Content) -->
+  <div class="flex-grow flex items-center px-20 md:px-10 py-20">
+    <div class="max-w-full md:max-w-3xl text-white">
+      <!-- Subheading -->
+      <p class="text-[12px] md:text-[15px] tracking-[4px] md:tracking-[10px] text-red-700 font-bold uppercase mb-4">
+        <span class="border-b-2 border-red-700 pb-1">CAR DETAILI</span><span class="border-t-2 border-red-700 pt-1">NG SERVICE</span>
+      </p>
+
+      <!-- Main Heading -->
+      <h2 class="text-[32px] sm:text-[45px] md:text-[60px] leading-tight font-bold uppercase">
+        THE ULTIMATE <br class="hidden md:block">
+        <span class="text-red-700">CAR DETAILING</span> SERVICE
+      </h2>
+
+      <!-- Description -->
+      <p class="mt-6 text-sm md:text-lg text-gray-200 max-w-lg leading-relaxed">
+        At AutoDetail, we deliver reliable, efficient detailing for personal cars and fleets, restoring showroom shine, extending vehicle life, and protecting your investment.
+      </p>
+    </div>
+  </div>
+</nav>    
+<main class="bg-gray-900">
+    <!-------- ABOUT US -------->
+<div class="flex flex-col lg:flex-row items-center justify-center gap-10 px-6 py-10 md:py-20  text-white">
+  
+  <!-- Image Gallery Side -->
+  <div class="flex gap-4 md:gap-5 p-2 md:p-5 ml-15">
+    <img
+      src="./img/i1.webp"
+      alt="service"
+      class="w-[45%] lg:w-64 h-auto aspect-[3/4] rounded-2xl mt-10 lg:mt-20 object-cover shadow-lg"
+    />
+    <img
+      src="./img/i2.webp"
+      alt="service"
+      class="w-[45%] lg:w-64 h-auto aspect-[3/4] rounded-2xl mt-20 lg:mt-32 object-cover shadow-lg"
+    />
+  </div>
+
+  <!-- Text Content Side -->
+  <div class="w-full lg:w-[500px] xl:w-[600px] text-center lg:text-left ml-18">
+    <h4 class="tracking-[8px] md:tracking-[13px] uppercase font-bold text-red-700">
+      <span class="border-b-2 border-red-700 pb-1">ABOU</span><span class="border-t-2 border-red-700 pt-1">T US</span>
+    </h4>
+    
+    <h2 class="mt-6 text-3xl md:text-5xl font-bold leading-tight">
+      Restoring Lasting Shine,<br class="hidden md:block" />
+      Inside and Out
+    </h2>
+    
+    <p class="mt-6 text-base md:text-[18px] leading-relaxed text-gray-300">
+      At AutoDetail, we’re passionate about making every vehicle look its
+      absolute best—inside and out. From restoring showroom-level gloss to
+      deep-cleaning interiors, our expert team delivers flawless results
+      with care and precision.
+    </p>
+    
+    <button
+      class="mt-8 rounded-[10px] bg-red-600 text-white px-8 py-3 font-bold transition duration-300 hover:shadow-[0_0_20px_rgba(220,38,38,0.5)] hover:scale-105"
+    >
+      Read More
+    </button>
+  </div>
+</div>
+      <!------------------ ACHIEVEMENTS --------------->
+<div class="px-6 py-10">
+  <!-- Responsive Grid: 1 col on mobile, 2 cols on small tablets, 4 cols on desktop -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-15 max-w-7xl mx-auto">
+    
+    <!-- Hours of Work -->
+    <div class="flex flex-col items-center text-center text-white font-bold">
+      <img src="./img/workind hours.png" alt="working" class="w-12 h-12 mb-3" />
+      <h1 class="text-3xl md:text-4xl">65250+</h1>
+      <p class="text-gray-500 tracking-wide">Hours of Works</p>
+    </div>
+
+    <!-- Happy Customers -->
+    <div class="flex flex-col items-center text-center text-white font-bold">
+      <img src="./img/thums up.png" alt="thumbs up" class="w-12 h-12 mb-3" />
+      <h1 class="text-3xl md:text-4xl">23160+</h1>
+      <p class="text-gray-500 tracking-wide">Happy Customers</p>
+    </div>
+
+    <!-- Experienced Workers -->
+    <div class="flex flex-col items-center text-center text-white font-bold">
+      <img src="./img/cus.png" alt="cus" class="w-12 h-12 mb-3" />
+      <h1 class="text-3xl md:text-4xl">1500+</h1>
+      <p class="text-gray-500 tracking-wide">Experienced Workers</p>
+    </div>
+
+    <!-- Years of Experience -->
+    <div class="flex flex-col items-center text-center text-white font-bold">
+      <img src="./img/award.png" alt="award" class="w-12 h-12 mb-3" />
+      <h1 class="text-3xl md:text-4xl">20+</h1>
+      <p class="text-gray-500 tracking-wide">Years of Experience</p>
+    </div>
+    
+  </div>
+
+  <!-- Responsive Car Image -->
+  <div class="w-full mt-16">
+    <img
+      src="./img/Screenshot 2026-03-02 151837.png"
+      alt="red car"
+      class="w-full h-auto object-cover md:rounded-3xl "
+    />
+  </div>
+</div>
+    <!---- types of service details ----------->
+<div class="text-center px-6 py-10 md:py-20">
+  
+  <!-- Subheading -->
+  <div class="mb-6">
+    <h5 class="text-white tracking-[6px] md:tracking-[10px] text-sm md:text-base font-bold uppercase">
+      <span class="border-b-2 border-red-700 pb-1">WELCOME TO</span><span class="border-t-2 border-red-700 pt-1">AUTODETAIL</span>
+    </h5>
+  </div>
+
+  <!-- Main Heading -->
+  <div class="mb-6">
+    <h3 class="text-3xl md:text-5xl lg:text-6xl text-white font-bold uppercase leading-tight">
+      PREMIUM CAR <br class="block md:hidden" /> DETAILING
+    </h3>
+  </div>
+
+  <!-- Description -->
+  <div class="max-w-2xl mx-auto">
+    <p class="text-gray-400 text-sm md:text-lg leading-relaxed ">
+      From deep interior cleaning to long-lasting ceramic coating, we 
+      restore and protect your vehicle with precision, care, and a 
+      commitment to perfection.
+    </p>
+  </div>
+  
+</div>
+     <!------------- SERVICE PIC GRID -------------->
+<div class="px-6 py-10 md:py-20">
+  <!-- Grid container: 1 col on mobile, 2 on md, 3 on lg -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+    
+    <!-- Service Item 1 -->
+    <div class="relative group overflow-hidden rounded-xl aspect-square shadow-lg">
+      <img src="img/1.png" alt="service" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+      
+      <!-- Blur Overlay -->
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center text-center text-white p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+        <p class="text-sm md:text-lg leading-relaxed mb-4">
+          Gently yet thorough hand wash using pH-balanced soaps, followed by premium wax to protect your paint.
+        </p>
+        <button class="rounded-lg bg-red-500 text-white px-6 py-2 transition duration-300 hover:shadow-[0_0_20px_red] hover:scale-105 font-bold">
+          Read More
+        </button>
+      </div>
+    </div>
+
+    <!-- Service Item 2 -->
+    <div class="relative group overflow-hidden rounded-xl aspect-square shadow-lg">
+      <img src="img/2.png" alt="service" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center text-center text-white p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+        <p class="text-sm md:text-lg leading-relaxed mb-4">Deep interior cleaning and vacuuming to restore that new car smell and feel.</p>
+        <button class="rounded-lg bg-red-500 text-white px-6 py-2 transition duration-300 hover:shadow-[0_0_20px_red] hover:scale-105 font-bold">
+          Read More
+        </button>
+      </div>
+    </div>
+
+    <!-- Service Item 3 -->
+    <div class="relative group overflow-hidden rounded-xl aspect-square shadow-lg">
+      <img src="img/3.png" alt="service" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center text-center text-white p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+        <p class="text-sm md:text-lg leading-relaxed mb-4">Advanced ceramic coating for long-term protection and extreme hydrophobic shine.</p>
+        <button class="rounded-lg bg-red-500 text-white px-6 py-2 transition duration-300 hover:shadow-[0_0_20px_red] hover:scale-105 font-bold">
+          Read More
+        </button>
+      </div>
+    </div>
+      <!-- Service Item 4 -->
+    <div class="relative group overflow-hidden rounded-xl aspect-square shadow-lg">
+      <img src="img/4.png" alt="service" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center text-center text-white p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+        <p class="text-sm md:text-lg leading-relaxed mb-4">Advanced ceramic coating for long-term protection and extreme hydrophobic shine.</p>
+        <button class="rounded-lg bg-red-500 text-white px-6 py-2 transition duration-300 hover:shadow-[0_0_20px_red] hover:scale-105 font-bold">
+          Read More
+        </button>
+      </div>
+    </div>
+     <!-- Service Item 5 -->
+    <div class="relative group overflow-hidden rounded-xl aspect-square shadow-lg">
+      <img src="img/5.png" alt="service" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center text-center text-white p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+        <p class="text-sm md:text-lg leading-relaxed mb-4">Advanced ceramic coating for long-term protection and extreme hydrophobic shine.</p>
+        <button class="rounded-lg bg-red-500 text-white px-6 py-2 transition duration-300 hover:shadow-[0_0_20px_red] hover:scale-105 font-bold">
+          Read More
+        </button>
+      </div>
+    </div>
+     <!-- Service Item 6 -->
+    <div class="relative group overflow-hidden rounded-xl aspect-square shadow-lg">
+      <img src="img/6.png" alt="service" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center text-center text-white p-6 opacity-0 group-hover:opacity-100 transition duration-500">
+        <p class="text-sm md:text-lg leading-relaxed mb-4">Advanced ceramic coating for long-term protection and extreme hydrophobic shine.</p>
+        <button class="rounded-lg bg-red-500 text-white px-6 py-2 transition duration-300 hover:shadow-[0_0_20px_red] hover:scale-105 font-bold">
+          Read More
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+      <!------------------------ CAR COMPANY LOGOS -->
+
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 lg:justify-around p-10 md:p-20 opacity-70 grayscale hover:opacity-100 transition-all duration-500">
+  
+  <div class="transition-transform hover:scale-110">
+    <img src="./img/c1.webp" alt="logo" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+  </div>
+  
+  <div class="transition-transform hover:scale-110">
+    <img src="./img/c2.webp" alt="logo" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+  </div>
+  
+  <div class="transition-transform hover:scale-110">
+    <img src="./img/c3.webp" alt="logo" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+  </div>
+  
+  <div class="transition-transform hover:scale-110">
+    <img src="./img/c4.webp" alt="logo" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+  </div>
+  
+  <div class="transition-transform hover:scale-110">
+    <img src="./img/c5.webp" alt="logo" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+  </div>
+  
+  <div class="transition-transform hover:scale-110">
+    <img src="./img/c6.webp" alt="logo" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
+  </div>
+
+</div>
+     <!------------- REAL RESULTS ---------->
+<div class="bg-black min-h-fit lg:h-[600px] flex flex-col lg:flex-row items-center px-6 md:px-12 py-12 lg:py-0 overflow-hidden">
+  
+  <!-- Text Content Area -->
+  <div class="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left">
+    <h6 class="text-white tracking-[6px] md:tracking-[10px] text-[13px] md:text-[15px] mb-6">
+      <span class="border-b-2 border-red-700 pb-1">REAL RE</span><span class="border-t-2 border-red-700 pt-1">SULTS</span>
+    </h6>
+    
+    <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6">
+      Before & After: Complete <br class="hidden md:block" />
+      Auto Transformations
+    </h1>
+    
+    <p class="text-gray-400 text-base md:text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed">
+      See the dramatic difference ceramic coating makes—restoring clarity,
+      depth, and shine while adding a durable layer of protection. Every
+      detail counts, and the results speak for themselves.
+    </p>
+  </div>
+
+  <!-- Image Area -->
+  <div class="w-full lg:w-1/2 mt-10 lg:mt-0 flex justify-center lg:justify-end">
+    <img
+      src="./img/clean.webp"
+      alt="result"
+      class="w-full max-w-[600px] h-auto lg:h-[450px] object-cover rounded-2xl shadow-2xl transition-transform duration-500 hover:scale-105"
+    />
+  </div>
+
+</div>
+      <!-- Feedback Carousel -->
+<div class="relative max-w-5xl mx-auto mt-16 overflow-hidden">
+
+  <!-- Slides Wrapper -->
+  <div id="carousel" class="flex transition-transform duration-700">
+
+    <!-- Slide 1 -->
+    <div class="min-w-full flex justify-center">
+      <div class="bg-black w-80 text-white p-5 text-center rounded-2xl">
+          <div class="flex gap-5 justify-around">
+            <div>
+              <img
+                src="./img/p1.jpg"
+                alt="cus1"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+            <div>
+              <h5>JOHN DASS</h5>
+              <p>22 DEC 2024</p>
+            </div>
+            <div>
+              <img
+                src="./img/google.jpg"
+                alt="google icon"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+          </div>
+          <div class="flex mt-3 mb-3">
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <h6 class="pl-1">5</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolorem unde reiciendis voluptatem perspiciatis. Minima suscipit
+            excepturi expedita possimus magni.
+          </p>
+        </div>
+
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="min-w-full flex justify-center">
+      <div class="bg-black w-80 text-white p-5 text-center rounded-2xl">
+         <div class="flex gap-5 justify-around">
+            <div>
+              <img
+                src="./img/p2.jpg"
+                alt="cus1"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+            <div>
+              <h5>LEO DASS</h5>
+              <p>22 DEC 2024</p>
+            </div>
+            <div>
+              <img
+                src="./img/google.jpg"
+                alt="google icon"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+          </div>
+          <div class="flex mt-3 mb-3">
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <h6 class="pl-1">5</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolorem unde reiciendis voluptatem perspiciatis. Minima suscipit
+            excepturi expedita possimus magni.
+          </p>
+        </div>
+
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="min-w-full flex justify-center">
+      <div class="bg-black w-80 text-white p-5 text-center rounded-2xl">
+           <div class="flex gap-5 justify-around">
+            <div>
+              <img
+                src="./img/p3.jpg"
+                alt="cus1"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+            <div>
+              <h5>GOPAL DASS</h5>
+              <p>22 DEC 2024</p>
+            </div>
+            <div>
+              <img
+                src="./img/google.jpg"
+                alt="google icon"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+          </div>
+          <div class="flex mt-3 mb-3">
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <h6 class="pl-1">5</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolorem unde reiciendis voluptatem perspiciatis. Minima suscipit
+            excepturi expedita possimus magni.
+          </p>
+        </div>
+
+    </div>
+    <!-- Slide 4 -->
+    <div class="min-w-full flex justify-center">
+      <div class="bg-black w-80 text-white p-5 text-center rounded-2xl">
+            <div class="flex gap-5 justify-around">
+            <div>
+              <img
+                src="./img/p3.jpg"
+                alt="cus1"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+            <div>
+              <h5>KAMAL DASS</h5>
+              <p>22 DEC 2024</p>
+            </div>
+            <div>
+              <img
+                src="./img/google.jpg"
+                alt="google icon"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+          </div>
+          <div class="flex mt-3 mb-3">
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <h6 class="pl-1">5</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolorem unde reiciendis voluptatem perspiciatis. Minima suscipit
+            excepturi expedita possimus magni.
+          </p>
+        </div>
+
+    </div>
+    <!-- Slide 5 -->
+    <div class="min-w-full flex justify-center">
+      <div class="bg-black w-80 text-white p-5 text-center rounded-2xl">
+            <div class="flex gap-5 justify-around">
+            <div>
+              <img
+                src="./img/p1.jpg"
+                alt="cus1"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+            <div>
+              <h5>ILAN DASS</h5>
+              <p>22 DEC 2024</p>
+            </div>
+            <div>
+              <img
+                src="./img/google.jpg"
+                alt="google icon"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+          </div>
+          <div class="flex mt-3 mb-3">
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <h6 class="pl-1">5</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolorem unde reiciendis voluptatem perspiciatis. Minima suscipit
+            excepturi expedita possimus magni.
+          </p>
+        </div>
+
+    </div>
+    <!-- Slide 6 -->
+    <div class="min-w-full flex justify-center">
+      <div class="bg-black w-80 text-white p-5 text-center rounded-2xl">
+            <div class="flex gap-5 justify-around">
+            <div>
+              <img
+                src="./img/p1.jpg"
+                alt="cus1"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+            <div>
+              <h5>MANI DASS</h5>
+              <p>22 DEC 2024</p>
+            </div>
+            <div>
+              <img
+                src="./img/google.jpg"
+                alt="google icon"
+                class="w-10 h-10 rounded-[30px]"
+              />
+            </div>
+          </div>
+          <div class="flex mt-3 mb-3">
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <img src="./img/star.png" alt="star" class="w-5 h-5" />
+            <h6 class="pl-1">5</h6>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+            dolorem unde reiciendis voluptatem perspiciatis. Minima suscipit
+            excepturi expedita possimus magni.
+          </p>
+        </div>
+
+    </div>
+
+  </div>
+
+  <!-- Dots -->
+  <div class="flex justify-center mt-6 gap-3">
+    <button class="dot w-3 h-3 rounded-full bg-gray-500"></button>
+    <button class="dot w-3 h-3 rounded-full bg-gray-500"></button>
+    <button class="dot w-3 h-3 rounded-full bg-gray-500"></button>
+    <button class="dot w-3 h-3 rounded-full bg-gray-500"></button>
+    <button class="dot w-3 h-3 rounded-full bg-gray-500"></button>
+    <button class="dot w-3 h-3 rounded-full bg-gray-500"></button>
+  </div>
+
+</div>
+       <!------------ APPOINTMENT CTA BAR ------------>
+<div class="flex flex-col md:flex-row justify-between items-center bg-red-600 min-h-[100px] mt-10 px-6 py-6 md:py-0 gap-4">
+  <div>
+    <h1 class="text-xl md:text-3xl text-white font-bold text-center md:text-left opacity-0 translate-y-10 animate-[fadeUp_1.2s_ease-out_forwards] mt-[-50px]">
+      WANT YOUR CAR TO SHINE LIKE NEW AGAIN?
+    </h1>
+  </div>
+  <div class="flex-shrink-0">
+    <button class="relative overflow-hidden px-8 py-3 rounded-lg text-white border-2 border-black font-bold group mt-[10px]">
+      <span class="absolute inset-0 bg-black translate-x-full transition-transform duration-300 group-hover:translate-x-0"></span>
+      <span class="relative z-10 group-hover:text-white transition-colors duration-300">
+        Make Appointment
+      </span>
+    </button>
+  </div>
+</div>
+
+<!----------- BENEFITS SECTION HEADER ----------->
+<div class="text-center mt-16 px-4">
+  <h6 class="text-white tracking-[5px] uppercase text-sm md:text-base mb-5">
+    <span class="border-b-2 border-red-700 pb-1">TRUSTED & </span><span class="border-t-2 border-red-700 pt-1">AFFORDABLE</span>
+  </h6>
+  <h1 class="text-white text-3xl md:text-5xl font-bold mt-5 mb-4">
+    WHY CHOOSE OUR CAR<br class="hidden md:block" /> DETAILING?
+  </h1>
+  <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-base leading-relaxed">
+    From deep interior cleaning to long-lasting ceramic coating, we restore and protect your vehicle with precision, care, and a commitment to perfection.
+  </p>
+</div>
+
+<!------ BENEFITS CARDS GRID ------>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 mt-12 max-w-7xl mx-auto">
+  
+  <!-- Card 1 -->
+  <div class="bg-black rounded-2xl text-white p-6 border border-gray-900 transform transition duration-500 hover:-translate-y-4 hover:shadow-[0_0_25px_rgba(255,0,0,0.4)]">
+    <h4 class="border-b-2 border-red-500 pb-2 font-bold text-lg uppercase">
+      Expert Technicians
+    </h4>
+    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+      Our detailers are skilled professionals with years of experience in car care and restoration.
+    </p>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="bg-black rounded-2xl text-white p-6 border border-gray-900 transform transition duration-500 hover:-translate-y-4 hover:shadow-[0_0_25px_rgba(255,0,0,0.4)]">
+    <h4 class="border-b-2 border-red-500 pb-2 font-bold text-lg uppercase">
+      Tailored Packages
+    </h4>
+    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+      Detailing options customized specifically to your car’s condition and your personal preferences.
+    </p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="bg-black rounded-2xl text-white p-6 border border-gray-900 transform transition duration-500 hover:-translate-y-4 hover:shadow-[0_0_25px_rgba(255,0,0,0.4)]">
+    <h4 class="border-b-2 border-red-500 pb-2 font-bold text-lg uppercase">
+      Affordable Pricing
+    </h4>
+    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+      Competitive rates with no hidden fees — premium quality service that fits your budget perfectly.
+    </p>
+  </div>
+
+  <!-- Card 4 -->
+  <div class="bg-black rounded-2xl text-white p-6 border border-gray-900 transform transition duration-500 hover:-translate-y-4 hover:shadow-[0_0_25px_rgba(255,0,0,0.4)]">
+    <h4 class="border-b-2 border-red-500 pb-2 font-bold text-lg uppercase">
+      Aftercare Support
+    </h4>
+    <p class="mt-4 text-gray-400 text-sm leading-relaxed">
+      We provide post-service tips and care advice to keep your car looking showroom sharp for longer.
+    </p>
+  </div>
+
+</div>
+     <!------- LUXURY CAR IMAGE SECTION ------->
+<div class="w-full mt-10 overflow-hidden">
+  <img
+    src="img/car4.jpg"
+    alt="luxury car"
+    class="w-full h-[300px] md:h-[500px] lg:h-[650px] object-cover object-center transition-transform duration-700 hover:scale-105"
+  />
+</div>
+      <!------ CUSTOMER QUESTIONS ----->
+<div class="bg-black px-6 py-16 md:py-24">
+  <!-- Container for side-by-side on desktop, stack on mobile -->
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
+    
+    <!-- Left Column: Heading -->
+    <div class="w-full lg:w-2/5">
+      <h4 class="tracking-[6px]  text-white text-xs uppercase font-bold">
+        <span class="border-b-2 border-red-500 pb-1">EVERYTHING YOU </span>
+        <span class="border-t-2 border-red-500 pt-1">NEED TO KNOW</span>
+      </h4>
+      <h1 class="text-white text-4xl md:text-5xl font-bold mt-10 leading-tight">
+        FREQUENTLY ASKED<br class="hidden md:block" /> QUESTIONS
+      </h1>
+    </div>
+
+    <!-- Right Column: FAQ Accordion -->
+    <div class="w-full lg:w-3/5 text-white">
+      
+      <!-- FAQ Item 1 -->
+      <div class="border-b border-gray-700 py-5">
+        <button class="faq-btn flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold hover:text-red-500 transition-colors duration-300">
+          What’s included in a full detailing service?
+          <span class="arrow transition-transform duration-300 text-red-500">⌄</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 text-gray-400 mt-3">
+          <p class="pb-4">
+            Car detailing is a thorough cleaning and restoration process
+            that improves your vehicle’s appearance inside and out.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="border-b border-gray-700 py-5">
+        <button class="faq-btn flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold hover:text-red-500 transition-colors duration-300">
+          How often should I get my car detailed?
+          <span class="arrow transition-transform duration-300 text-red-500">⌄</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 text-gray-400 mt-3">
+          <p class="pb-4">
+            We recommend detailing every 3–6 months depending on usage
+            and environmental conditions.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="border-b border-gray-700 py-5">
+        <button class="faq-btn flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold hover:text-red-500 transition-colors duration-300">
+          Will detailing remove scratches and stains?
+          <span class="arrow transition-transform duration-300 text-red-500">⌄</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 text-gray-400 mt-3">
+          <p class="pb-4">
+            Minor scratches and light stains can often be removed through polishing
+            and deep cleaning. Deep scratches may require paint correction.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="py-5">
+        <button class="faq-btn flex justify-between items-center w-full text-left text-lg md:text-xl font-semibold hover:text-red-500 transition-colors duration-300">
+          How long does a detailing session take?
+          <span class="arrow transition-transform duration-300 text-red-500">⌄</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 text-gray-400 mt-3">
+          <p class="pb-4">
+            A detailing session typically takes between 2 to 5 hours,
+            depending on the vehicle size and selected service package.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!---------- INSTAGRAM HEADER --------->
+<div class="text-center mt-16 px-6">
+  <h6 class="text-white tracking-[8px] md:tracking-[10px] text-xs uppercase mb-4">
+    <span class="border-b-2 border-red-500 pb-1">OUR INS</span><span class="border-t-2 border-red-500 pt-1">TAGRAM</span>
+  </h6>
+  <a href="https://instagram.com/_dxinesx_" target="_blank" class="text-3xl md:text-4xl text-white font-bold hover:text-red-500 transition-colors">
+    @_dxinesx_
+  </a>
+</div>
+
+<!------ INSTAGRAM GALLERY GRID ------>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 mt-12">
+  
+  <!-- Image Item 1 -->
+  <div class="relative group overflow-hidden cursor-pointer">
+    <img src="img/car1.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" alt="Instagram car 1">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+      <i class="text-white text-4xl fab fa-instagram"></i>
+    </div>
+  </div>
+
+  <!-- Image Item 2 -->
+  <div class="relative group overflow-hidden cursor-pointer">
+    <img src="img/car2.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" alt="Instagram car 2">
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+      <i class="text-white text-4xl fab fa-instagram"></i>
+    </div>
+  </div>
+
+  <!-- Image Item 3 -->
+  <div class="relative group overflow-hidden cursor-pointer">
+    <img src="img/car3.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" alt="Instagram car 3">
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+      <i class="text-white text-4xl fab fa-instagram"></i>
+    </div>
+  </div>
+
+  <!-- Image Item 4 -->
+  <div class="relative group overflow-hidden cursor-pointer">
+    <!-- Removed the mt-10 and h-[520px] to keep the grid uniform -->
+    <img src="img/car4.jpg" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" alt="Instagram car 4">
+    <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+      <i class="text-white text-4xl fab fa-instagram"></i>
+    </div>
+  </div>
+
+</div>
+        <!-- FOOTER -->
+<footer class="bg-[#1c1c1c] text-gray-300 pt-16 pb-6">
+
+  <!-- Responsive Grid: 1 col on mobile, 2 on tablet, 4 on desktop -->
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+
+    <!-- Company Info -->
+    <div class="space-y-6">
+      <h2 class="text-2xl font-bold text-white flex items-center gap-2">
+        <img src="./img/logo-white.webp" alt="logo" class="h-10 w-auto">
+      </h2>
+
+      <p class="text-gray-400 leading-7">
+        At AutoDetail, we’re dedicated to providing professional,
+        high-quality car detailing services. From routine hand washes
+        to advanced ceramic coatings, we help keep your vehicle looking
+        its best while preserving its value.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-3">
+        <a href="#" class="bg-[#2a2a2a] p-3 rounded-lg hover:bg-red-600 hover:scale-110 transition duration-300">
+          <img src="./img/instagram.svg" alt="insta" class="w-5 h-5">
+        </a>
+        <a href="#" class="bg-[#2a2a2a] p-3 rounded-lg hover:bg-red-600 hover:scale-110 transition duration-300">
+          <img src="./img/facebook.svg" alt="facebook" class="w-5 h-5">
+        </a>
+        <a href="#" class="bg-[#2a2a2a] p-3 rounded-lg hover:bg-red-600 hover:scale-110 transition duration-300">
+          <img src="./img/dribbble.svg" alt="dribble" class="w-5 h-5">
+        </a>
+        <a href="#" class="bg-[#2a2a2a] p-3 rounded-lg hover:bg-red-600 hover:scale-110 transition duration-300">
+          <img src="./img/twitterX.svg" alt="twitter" class="w-5 h-5">
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Links -->
+    <div class="lg:pl-10">
+      <h3 class="text-white text-xl font-semibold mb-6">Company</h3>
+      <ul class="space-y-4">
+        <li><a href="#" class="hover:text-red-500 transition duration-300">Home</a></li>
+        <li><a href="#" class="hover:text-red-500 transition duration-300">Gallery</a></li>
+        <li><a href="#" class="hover:text-red-500 transition duration-300">About Us</a></li>
+        <li><a href="#" class="hover:text-red-500 transition duration-300">Blog</a></li>
+        <li><a href="#" class="hover:text-red-500 transition duration-300">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-6">Our Services</h3>
+      <ul class="space-y-4">
+        <li class="hover:text-red-500 hover:cursor-pointer transition duration-300">Exterior Hand Wash & Wax</li>
+        <li class="hover:text-red-500 hover:cursor-pointer transition duration-300">Paint Correction</li>
+        <li class="hover:text-red-500 hover:cursor-pointer transition duration-300">Interior Deep Cleaning</li>
+        <li class="hover:text-red-500 hover:cursor-pointer transition duration-300">Ceramic Coating Protection</li>
+        <li class="hover:text-red-500 hover:cursor-pointer transition duration-300">Engine Bay Detailing</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 class="text-white text-xl font-semibold mb-6">Contact Us</h3>
+      
+      <div class="space-y-5">
+        <p class="flex gap-3 items-start">
+          <span class="text-red-500">📍</span>
+          <span>Head Office <br> <span class="text-gray-400 text-sm">6th Street, Cross Cut Road, Gandhipuram, CBE</span></span>
+        </p>
+
+        <p class="flex gap-3 items-start">
+          <span class="text-red-500">📞</span>
+          <span>Call Us <br> <span class="text-gray-400 text-sm">+91 8754877993</span></span>
+        </p>
+
+        <p class="flex gap-3 items-start">
+          <span class="text-red-500">✉️</span>
+          <span>Email Us <br> <span class="text-gray-400 text-sm">support@autodetail.com</span></span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto border-t border-gray-800 mt-16 pt-8 px-6 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+    <p>© 2026 AutoDetail. All Rights Reserved.</p>
+    <div class="flex gap-6 mt-4 md:mt-0">
+      <a href="#" class="hover:text-red-500 transition duration-300">Terms & Conditions</a>
+      <a href="#" class="hover:text-red-500 transition duration-300">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
